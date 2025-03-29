@@ -1,0 +1,294 @@
+:root {
+	--app-height: 100svh;
+	--nav-height: 34px;
+	--color: #000;
+	--bg: #fff;
+	--gray: #e3e3e3;
+	--padding: 5px;
+	--gap: 10px;
+	--fs-standard: 12px;
+	--nav-height: 30px;
+	--fs-s: 12px;
+	--fs-sl: 14px;
+	--fs-m: 18px;
+	--fs-l: 20px;
+}
+
+@media(max-width: 780px) {
+	:root {
+		--nav-height: 25px;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	color: var(--color);
+	font-size: var(--fs-s);
+	line-height: 1em;
+	font-weight: 700;
+	font-family: HelveticaNowDisplay, Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+::selection {
+	background: #000;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #000;
+	color: #fff;
+}
+
+body,
+html {
+	width: 100%;
+	height: var(--app-height);
+	overflow: hidden;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	background: var(--bg);
+}
+
+a {
+	text-decoration: none;
+}
+
+.embla {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.embla__container {
+	display: flex;
+	height: 100%;
+}
+
+.embla__slide {
+	flex: 0 0 100%;
+	min-width: 0;
+}
+
+.embla__slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* abc diatype mono variable */
+@font-face {
+	font-family: ABC Diatype Mono Variable;
+	src: url(https://cv55n.github.io/fonts/ABCDiatypeMonoVariable.0af015be.woff2) format("woff2"), url(https://cv55n.github.io/fonts/ABCDiatypeMonoVariable.51f8297f.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* helvetica now display (negrito) */
+@font-face {
+	font-family: HelveticaNowDisplay;
+	src: url(https://cv55n.github.io/fonts/HelveticaNowDisplay-Bold.946a5ffe.woff2) format("woff2"), url(https://cv55n.github.io/fonts/HelveticaNowDisplay-Bold.867f0e48.woff) format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* helvetica now display (médio) */
+@font-face {
+	font-family: HelveticaNowDisplay;
+	src: url(https://cv55n.github.io/fonts/HelveticaNowDisplay-Medium.624a541f.woff2) format("woff2"), url(https://cv55n.github.io/fonts/HelveticaNowDisplay-Medium.4aca5044.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* sf pro pingfang sc (semi-negrito) */
+@font-face {
+	font-family: PingFang SC;
+	src: url(https://cv55n.github.io/fonts/SFProPingFangSC-Semibold.472186e0.woff2) format("woff2"), url(https://cv55n.github.io/fonts/SFProPingFangSC-Semibold.935e3674.woff) format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+.cookies_overlay_cookies__1CePJ {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: var(--padding);
+	z-index: 100;
+	--background: #fff;
+	--color: #000;
+}
+
+.cookies_overlay_cookies__1CePJ.cookies_overlay_settings__wP4Gf {
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+}
+
+.cookies_overlay_cookiesBody__e8gnB {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 400px;
+	width: 100%;
+	padding: 10px 10px 10px 30px;
+	background: #dadada;
+	z-index: 10;
+	border-radius: 90px;
+}
+
+.cookies_overlay_cookies__1CePJ.cookies_overlay_settings__wP4Gf .cookies_overlay_cookiesBody__e8gnB {
+	width: 700px;
+	grid-template-columns: minmax(0, 1fr);
+	border-radius: 30px;
+	gap: 20px;
+	padding: 20px;
+}
+
+.cookies_overlay_body___IGtH {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 12px;
+}
+
+.cookies_overlay_actions__HVpHF {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-gap: var(--padding);
+	gap: var(--padding);
+}
+
+.cookies_overlay_action__jpxuA {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: var(--background);
+	border-radius: 90px;
+	cursor: pointer;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+	padding: 20px 0;
+	font-size: 20px;
+}
+
+.cookies_overlay_action__jpxuA.cookies_overlay_contrast__QwaO_ {
+	background: var(--color);
+	color: var(--background);
+}
+
+@media(hover:hover) {
+	.cookies_overlay_action__jpxuA:hover {
+		background: var(--color);
+		color: var(--background);
+	}
+
+	.cookies_overlay_action__jpxuA.cookies_overlay_contrast__QwaO_:hover {
+		background: var(--background);
+		color: var(--color);
+	}
+}
+
+.cookies_overlay_settingsOptions__ZyH1I {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	grid-gap: 20px;
+	gap: 20px;
+}
+
+.cookies_overlay_settingsOption__8ZK6x {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+	grid-gap: 20px;
+	gap: 20px;
+	cursor: pointer;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.cookies_overlay_settingsOptionSelect__UDDso {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	line-height: 26px;
+	gap: 10px;
+}
+
+.cookies_overlay_settingsOptionSelectIndicator__VDakT {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	border: 4px solid var(--background);
+	background: var(--background);
+	border-radius: 100%;
+}
+
+.cookies_overlay_settingsOptionSelectIndicator__VDakT.cookies_overlay_active__Ds_x2 {
+	background-color: var(--color);
+}
+
+.cookies_overlay_mobileSpacer__SBArd {
+	display: none;
+}
+
+@media(hover:hover) {
+	.cookies_overlay_settingsOption__8ZK6x:hover .cookies_overlay_settingsOptionSelectIndicator__VDakT {
+		border-color: var(--secondaryBackground);
+	}
+}
+
+@media(max-width:780px) {
+	.cookies_overlay_cookiesBody__e8gnB {
+		grid-template-columns: minmax(0, 1fr);
+		padding: 10px;
+		border-radius: 30px;
+	}
+
+	.cookies_overlay_cookies__1CePJ.cookies_overlay_settings__wP4Gf .cookies_overlay_cookiesBody__e8gnB {
+		width: 100%;
+	}
+
+	.cookies_overlay_body___IGtH {
+		display: block;
+		padding: 2px 0 14px;
+	}
+
+	.cookies_overlay_mobileSpacer__SBArd {
+		display: inline-block;
+		width: 5px;
+	}
+
+	.cookies_overlay_actions__HVpHF {
+		justify-content: center;
+		justify-items: center;
+	}
+
+	.cookies_overlay_action__jpxuA {
+		padding: 15px 0;
+	}
+
+	.cookies_overlay_settingsOption__8ZK6x {
+		grid-template-columns: 26px minmax(0, 1fr);
+	}
+
+	.cookies_overlay_settingsOptions__ZyH1I {
+		padding-top: 20px;
+	}
+
+	.cookies_overlay_settingsOptionSelectValue__8gzUj {
+		display: none;
+	}
+}
