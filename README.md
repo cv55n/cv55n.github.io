@@ -42,7 +42,7 @@ sudo crontab -e
 ```
 
 ```txt
-   0 0 * * * /caminho/completo/para/renew-ssl.sh >> /var/log/ssl-renewal.log 2>&1
+0 0 * * * /caminho/completo/para/renew-ssl.sh >> /var/log/ssl-renewal.log 2>&1
 ```
 
 para verificar o status dos certificados:
