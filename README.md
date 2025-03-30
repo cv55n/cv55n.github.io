@@ -38,6 +38,28 @@
 - valida certificado ssl
 - testa redirecionamento http para https
 
+### https e ssl
+
+- disponibilidade do https
+- headers de segurança
+
+### vulnerabilidades
+
+- versão do servidor web
+- conteúdo misto (http/https)
+- arquivos sensíveis expostos
+
+### dns e infraestrutura
+
+- resolução dns
+- disponibilidade do site
+
+### alertas
+
+- notificações por e-mail
+- logs detalhados
+- controle de frequência de alertas
+
 ## scripts
 
 para manter os certificados ssl atualizados, seguir esses passos:
@@ -80,4 +102,28 @@ para verificar se seu site está utilizando HTTPS corretamente:
 ```bash
 chmod +x check-https.sh
 ./check-https.sh
+```
+
+## monitoramento de segurança
+
+configuração inicial:
+
+```bash
+# dê permissão de execução ao script
+chmod +x security-monitor.sh
+   
+# crie os diretórios de log
+sudo mkdir -p /var/log
+sudo touch /var/log/security-monitor.log
+sudo touch /var/log/security-monitor-error.log
+```
+
+configurando o monitoramento automático:
+
+```bash
+# adicione ao crontab
+sudo crontab -e
+   
+# adicione a linha:
+@reboot /caminho/completo/para/security-monitor.sh
 ```
