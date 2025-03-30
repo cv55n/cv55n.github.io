@@ -20,6 +20,24 @@
 - política de permissões para recursos do navegador
 - configurações de cache
 
+### regras de redirecionamento mais robustas
+
+- suporte a proxy reverso
+- tratamento de www e non-www
+- redirecionamento 301 permanente
+
+### headers de segurança adicionais
+
+- hsts (http strict transport security)
+- upgrade de requisições inseguras
+- políticas de segurança de conteúdo
+
+### script de verificação
+
+- verifica disponibilidade https
+- valida certificado ssl
+- testa redirecionamento http para https
+
 ## scripts
 
 para manter os certificados ssl atualizados, seguir esses passos:
@@ -55,4 +73,11 @@ para testar a renovação manualmente:
 
 ```bash
 sudo certbot renew --dry-run
+```
+
+para verificar se seu site está utilizando HTTPS corretamente:
+
+```bash
+chmod +x check-https.sh
+./check-https.sh
 ```
