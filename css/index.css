@@ -14,13 +14,15 @@ body {
     justify-content: center;
     align-items: center;
     width: 29%;
-    height: 80vh;  
+    height: 80vh;
     margin: auto;
 }
 
 #rkgk img {
-    width: 100px;     
-    height: 312px;   
+    width: 100px;
+    height: 312px;
+
+    -webkit-user-drag: none;
 }
 
 #rkgk, #in {
@@ -52,7 +54,7 @@ body {
 
 #enterLink {
     display: inline-block;
-    transition: transform 0.1s; 
+    transition: transform 0.1s;
 }
 
 #enterLink:focus {
