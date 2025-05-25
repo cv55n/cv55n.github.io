@@ -1,0 +1,379 @@
+@font-face {
+	font-family: "Inter", sans-serif;
+	src: url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+	font-weight: 400;
+	font-style: normal
+}
+
+p.npf_quote {
+	font-family: Georgia, Times, Times New Roman, serif;
+	font-size: 23px
+}
+
+p.npf_quirky {
+	font-family: Fairwater, serif;
+	font-size: 24px;
+	line-height: 1.3em
+}
+
+p.npf_chat {
+	font-family: Source Code Pro, monospace
+}
+
+p.npf_color_joey,
+span.npf_color_joey {
+	color: #ff492f
+}
+
+p.npf_color_monica,
+span.npf_color_monica {
+	color: #ff8a00
+}
+
+p.npf_color_phoebe,
+span.npf_color_phoebe {
+	color: #e8d73a
+}
+
+p.npf_color_ross,
+span.npf_color_ross {
+	color: #00cf35
+}
+
+p.npf_color_rachel,
+span.npf_color_rachel {
+	color: #00b8ff
+}
+
+p.npf_color_chandler,
+span.npf_color_chandler {
+	color: #7c5cff
+}
+
+p.npf_color_niles,
+span.npf_color_niles {
+	color: #ff62ce
+}
+
+p.npf_color_frasier,
+span.npf_color_frasier {
+	color: #001935
+}
+
+p.npf_color_mr_big,
+span.npf_color_mr_big {
+	color: #000c1a
+}
+
+div.npf-link-block {
+	-ms-flex-align: center;
+	align-items: center;
+	border: 1px solid #d0d0d0;
+	border-radius: 6px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: 15px 0;
+	overflow: hidden
+}
+
+div.npf-link-block>a {
+	color: inherit;
+	width: 100%;
+	text-decoration: none
+}
+
+div.npf-link-block .title {
+	font-size: 25px;
+	line-height: 34px;
+	max-height: 136px;
+	overflow: hidden;
+	overflow-wrap: anywhere;
+	text-overflow: ellipsis
+}
+
+div.npf-link-block.no-poster .title {
+	padding: 16px 12px 0
+}
+
+div.npf-link-block .poster {
+	-ms-flex-align: center;
+	align-items: center;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-clip: content-box;
+	border-bottom: 1px solid #d0d0d0;
+	display: -ms-flexbox;
+	display: flex;
+	height: 250px;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative
+}
+
+div.npf-link-block .poster:before {
+	background: #000;
+	content: "";
+	display: block;
+	height: 100%;
+	opacity: .4;
+	position: absolute;
+	width: 100%
+}
+
+div.npf-link-block .poster .title {
+	color: #fff;
+	font-weight: 400;
+	padding: 16px 12px;
+	position: absolute;
+	text-align: center
+}
+
+div.npf-link-block .bottom {
+	color: inherit;
+	line-height: 24px;
+	padding: 8px 12px 16px
+}
+
+div.npf-link-block .bottom .description {
+	color: inherit;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	max-height: 48px;
+	overflow: hidden;
+	overflow-wrap: anywhere;
+	text-overflow: ellipsis
+}
+
+div.npf-link-block .bottom .site-name {
+	color: inherit;
+	font-size: 12.5px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-top: 10px;
+	opacity: .65;
+	text-transform: uppercase
+}
+
+.tmblr-full>video {
+	height: 100%;
+	width: 100%
+}
+
+.post-content div.npf_row,
+.post div.npf_row,
+body div.npf_row {
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 0;
+	overflow: hidden
+}
+
+.post-content div.npf_row figure.tmblr-full,
+.post div.npf_row figure.tmblr-full,
+body div.npf_row figure.tmblr-full {
+	-ms-flex: 1;
+	flex: 1;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 0;
+	overflow-y: hidden
+}
+
+.post-content div.npf_row .npf_col,
+.post-content div.npf_row figure.tmblr-full,
+.post div.npf_row .npf_col,
+.post div.npf_row figure.tmblr-full,
+body div.npf_row .npf_col,
+body div.npf_row figure.tmblr-full {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 2px;
+	padding-right: 2px
+}
+
+.post-content div.npf_row .npf_col:first-child,
+.post-content div.npf_row figure.tmblr-full:first-child,
+.post div.npf_row .npf_col:first-child,
+.post div.npf_row figure.tmblr-full:first-child,
+body div.npf_row .npf_col:first-child,
+body div.npf_row figure.tmblr-full:first-child {
+	padding-left: 0
+}
+
+.post-content div.npf_row .npf_col:last-child,
+.post-content div.npf_row figure.tmblr-full:last-child,
+.post div.npf_row .npf_col:last-child,
+.post div.npf_row figure.tmblr-full:last-child,
+body div.npf_row .npf_col:last-child,
+body div.npf_row figure.tmblr-full:last-child {
+	padding-right: 0
+}
+
+.post-content div.npf_row img,
+.post div.npf_row img,
+body div.npf_row img {
+	height: auto
+}
+
+.post-content div.npf_row .npf_col,
+.post div.npf_row .npf_col,
+body div.npf_row .npf_col {
+	-ms-flex: 1;
+	flex: 1
+}
+
+.post-content div.npf_row .npf_col figure,
+.post div.npf_row .npf_col figure,
+body div.npf_row .npf_col figure {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	text-align: left
+}
+
+.post-content div.npf_row .npf_col figure img,
+.post div.npf_row .npf_col figure img,
+body div.npf_row .npf_col figure img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
+
+.post-content div.npf_row .npf_col figure p.tmblr-attribution,
+.post div.npf_row .npf_col figure p.tmblr-attribution,
+body div.npf_row .npf_col figure p.tmblr-attribution {
+	box-sizing: border-box;
+	width: 100%
+}
+
+.post-content figure[data-enable-lightbox="1"],
+.post figure[data-enable-lightbox="1"],
+body figure[data-enable-lightbox="1"] {
+	cursor: pointer
+}
+
+.post-content a.post_media_photo_anchor,
+.post a.post_media_photo_anchor,
+body a.post_media_photo_anchor {
+	cursor: pointer;
+	-ms-flex: 1;
+	flex: 1;
+	text-decoration: none
+}
+
+.post-content .crt-video+div.npf_row,
+.post-content div.npf_row+.crt-video,
+.post-content div.npf_row+p,
+.post-content p+div.npf_row,
+.post .crt-video+div.npf_row,
+.post div.npf_row+.crt-video,
+.post div.npf_row+p,
+.post p+div.npf_row,
+body .crt-video+div.npf_row,
+body div.npf_row+.crt-video,
+body div.npf_row+p,
+body p+div.npf_row {
+	margin-top: 15px
+}
+
+.post-content div.npf_row+div.npf_row,
+.post-content div.npf_row+figure.tmblr-full,
+.post div.npf_row+div.npf_row,
+.post div.npf_row+figure.tmblr-full,
+body div.npf_row+div.npf_row,
+body div.npf_row+figure.tmblr-full {
+	margin-top: 4px
+}
+
+.poll-post .poll-question {
+	font-size: 27px;
+	font-weight: 500;
+	margin-bottom: 20px
+}
+
+.poll-post a.poll-row {
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #00b8ff;
+	border-radius: 18px;
+	border: 0;
+	box-sizing: border-box;
+	color: #000;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 16px;
+	font-weight: 700;
+	-ms-flex-pack: center;
+	justify-content: center;
+	line-height: 20px;
+	margin: 0 0 10px;
+	min-height: 38px;
+	overflow-wrap: anywhere;
+	padding: 7px 15px;
+	position: relative;
+	text-decoration: none;
+	width: 100%
+}
+
+.poll-post a.poll-row p {
+	margin: 0
+}
+
+.poll-post .poll-see-results {
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%
+}
+
+.tmblr-full>audio {
+	width: 100%
+}
+
+.tmblr-full>.audio-caption {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row
+}
+
+.tmblr-full>.audio-caption .album-cover {
+	width: 85px;
+	height: 85px
+}
+
+.tmblr-full>.audio-caption .audio-details {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	padding: 0 20px
+}
+
+.tmblr-full>.audio-caption .title {
+	font-weight: 700;
+	line-height: 1.5
+}
+
+.tmblr-full>.audio-caption .album,
+.tmblr-full>.audio-caption .artist {
+	font-size: .875em;
+	line-height: 1.5
+}
