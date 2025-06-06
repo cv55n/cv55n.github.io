@@ -36,13 +36,38 @@
         <script src="https://cv55n.github.io/js/shortcuts-disabler.js"></script>
 
         <!-- ícone -->
-        <link rel="shortcut icon" href="https://cv55n.github.io/icon/icon.jpg">
+        <link rel="shortcut icon" href="https://cv55n.github.io/media/icon/icon.jpg">
 
         <!-- tema de cor -->
         <meta name="theme-color" content="#FFF">
         <meta name="msapplication-TileColor" content="#FFF">
 
         <meta name="robots" content="noindex,nofollow,noarchive">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // o título original
+                const originalTitle = document.title;
+
+                let timeout;
+
+                // ausência na aba
+                document.addEventListener("visibilitychange", function() {
+                    if (document.hidden) {
+                        document.title = "come back";
+                    } else {
+                        document.title = originalTitle;
+                    }
+                });
+
+                // volta na aba
+                window.addEventListener("focus", function() {
+                    clearTimeout(timeout);
+
+                    document.title = originalTitle;
+                });
+            });
+        </script>
     </head>
 
     <body style="user-select: none;" oncontextmenu="return false;">
