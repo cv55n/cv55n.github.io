@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            behind
+        </title>
+
+        <!-- ícone -->
+        <link rel="shortcut icon" href="https://cv55n.github.io/media/icon/icon.jpg">
+
+        <!-- js -->
+        <script src="js/shortcuts-disabler.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // o título original
+                const originalTitle = document.title;
+
+                let timeout;
+
+                // ausência na aba
+                document.addEventListener("visibilitychange", function() {
+                    if (document.hidden) {
+                        document.title = "come back";
+                    } else {
+                        document.title = originalTitle;
+                    }
+                });
+
+                // volta na aba
+                window.addEventListener("focus", function() {
+                    clearTimeout(timeout);
+
+                    document.title = originalTitle;
+                });
+            });
+        </script>
+
+        <style>
+            ::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>
+            i think about it all the time
+        </h1>
+
+        <p>
+            this idea first came to me during a time where i was overwhelmed by my thoughts and started visualizing each one as an open tab. that shift in perspective helped me calm down and better manage myself. i also started to feel the mental heat and sluggishness, as if my brain is functioning like an overworked computer. after this moment i kept having recurring thoughts and started to imagine my mind in a computer context such as having opened thought tabs running in the background, memories surfacing at unwarranted times, elements of my inner world being organized into folders, and so on. 
+        </p>
+
+        <p>
+            the human body and mind are so complex, yet beautiful. i felt compelled to dissect the mind by mapping it out using my macbook and tools available in ios. what started as a thought eventually turned into a passion project i've been working on since december 2024. the mind being exhibited does not belong to a real person, but it is influenced partly by my personal experiences. i chose not to model it after myself, as doing so felt too invasive to share publicly. instead, creating a fictional persona gave me the freedom to build a character with their own stories and inner turmoil, offering the audience a deeper look into this imagined mind. the process of making this was both healing and painful. i had to look inward and sit with vulnerable moments by really understanding and asking myself difficult questions to extract raw thoughts, emotions, experiences, and memories. i then translated those findings into my interpretation of what the brain would look like if it were modeled after a computer.
+        </p>
+
+        <p>
+            in this project, i focused on five categories: home screen, current, memories, you, and dreams.
+        </p>
+
+        <p>
+            the <b>home screen</b> is what i imagine the main starting screen to look like in someone's mind. you are welcomed with the main folders or the main characteristics that make up a person. 
+        </p>
+
+        <p>
+            — within the folders there’s even more subfolders that go more in depth and it’s much more complex
+        </p>
+
+        <p>
+            the second screen displays a still image representing the <b>current</b> state of the person’s mind. we can see all the thoughts the character has had since waking up, along with some memories they’re reflecting on in the moment. a video recording accompanies the image, putting all of this into perspective by showing it happening in real time.
+        </p>
+
+        <p>
+            the <b>memories</b> folder holds all the memories but we can only see a portion. each memory has a key frame accompanied by a brief description. the folder also comes with its own system that helps better sort and organize memories more effectively. 
+        </p>
+
+        <p>
+            the <b>you</b> screen shows when the character thinks of this person and in doing so she thinks of him as a whole. 
+        </p>
+
+        <p>
+            the <b>dream</b> folder shows a small collection of recent dreams overlapping with old dreams. this is supposed to represent the fuzziness and blur memory you get when trying to recap a dream. you only remember parts of it and it all seems like a faint memory . in some cases it feels near impossible trying to recreate it in your head so you’re left with just fragments of still images. 
+        </p>
+
+        <p>
+            there are some folders and parts of the brain i wished to have delved into and highlighted in this project but due to software limitation i was not able to do so. i hope in the near future i end up doing a second part that goes more in depth and is more detailed, but for now i'm happy with what i have created and excited i get to share this to the world. 
+        </p>
+
+        <p>
+            all images and videos were outsourced and curated by me. <br> thank you.
+        </p>
+    </body>
+</html>
