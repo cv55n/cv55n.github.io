@@ -77,3 +77,11 @@ h1 {
 #h1:hover h1 {
     color: white;
 }
+
+img {
+    -webkit-user-drag: none; /* safari, chrome, opera */
+    -khtml-user-drag: none; /* konqueror html */
+    -moz-user-drag: none; /* firefox */
+    -o-user-drag: none; /* opera antigo */
+    user-drag: none; /* sintaxe padrão inicial */
+}
